@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="src/stylesheet.css">
+</head>
+<body>
+    <div class="name-project" style="display: none">
+        <h1>Школа по подписке</h1>
+    </div>
+    <div class="register" style="display: none">
+        <div class="registration-body">
+            <div class="sign-in">
+                <h3>Вход</h3>
+                <div class="sign-in-body">
+                    <input type="text" placeholder="Логин" id="login">
+                    <input type="password" placeholder="Пароль" id="password">
+                </div>
+                <a href="">Забыли пароль?</a>
+                <button class="sign-in-btn">Войти<span>>></span></button>
+                <div class="error-message" style="display: none;">
+                    <p>Неверный логин или пароль</p>
+                </div>
+            </div>
+            <div class="sign-up">
+                <h3>Регистрация</h3>
+                <div class="error-message" style="display: none">
+                    <p>Пользователь с таким номероом телефона уже зарегистрирован. Проверьте номер или войдите с помощью соседнего меню</p>
+                </div>
+                <div class="sign-up-body">
+                    
+                    <input type="text" placeholder="Имя" id="name">
+                    <input type="text" placeholder="Фамилия" id="surname">   
+                    <input type="email" placeholder="Эл. почта" id="email">
+                    <input type="tel" placeholder="Телефон" id="tel">
+                    
+                </div>
+                
+                <button class="sign-up-btn">Продолжить<span>>></span></button>
+            </div>
+        </div>
+        <div class="social">
+                <p>или</p>
+                <div class="social-icons">
+                    <button><img src="img/vk-logo.png" alt=""></button>
+                    <button><img src="img/twitter-logo.png" alt=""></button>
+                </div>
+        </div>
+    </div>
+    <script src="src/jquery-3.5.1.min.js"></script>
+    <script src="src/index.js"></script>
+</body>
+</html>
