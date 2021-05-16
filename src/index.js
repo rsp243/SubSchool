@@ -30,3 +30,4 @@ $('.sign-up-btn').on('click', function() {
         window.location.href = "";
     }
 })
+

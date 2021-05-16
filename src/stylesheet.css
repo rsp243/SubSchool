@@ -1,22 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800;900&family=Montserrat:wght@500&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     background-color: rgb(240, 240, 240);
 }
 
 .name-project {
     text-align: center;
-    padding: 170px 0 0 0;
-    font-size: 50px;
+    padding: 130px 0 0 0;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 78px;
+    line-height: 78px;
 }
 
 .registration-body {
+    font-family: 'Montserrat', sans-serif;
     display: flex;
-    padding: 40px 250px 20px 250px;
+    padding: 27px 250px 27px 250px;
     justify-content: center;
     text-align: center;
-    font-size: 25px;
+    font-size: 24px;
 }
 
 .sign-in {
@@ -28,36 +32,50 @@ body {
 }
 
 input{
-    width: 280px;
+    width: 288px;
+    height: 28px;
     display: block;
-    text-align: center;
-    margin: 15px auto;
-    border-radius: 25px;
-    box-shadow: 0px 3px 5px black;
+    margin: 16px auto 0 auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
     padding: 7px;
-    font-size: 18px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
     border: 0px;
 }
 
+h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
 a {
-    margin: 5px 0 0 0;
     font-size: 18px;
-    color: #497DDD;
+    color: #71A7E6;
 }
 
 .sign-in-body input:last-child {
-    margin: 15px auto 3px;
+    margin: 15px auto 9px;
 }
 
 .sign-in-btn {
     display: block;
-    margin: 15px auto;
-    width: 210px;
-    font-size: 20px;
+    margin: 21px auto;
+    text-align: center;
+    width: 189px;
+    height: 37px;
+    font-size: 14px;
+    line-height: 17px;
     border-radius: 25px;
     color:rgb(255, 255, 255);
-    background-color: rgb(24, 24, 24);
-    height: 45px;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    background-color: rgb(18, 18, 18);
 }
 
 .sign-in-btn span {
@@ -69,14 +87,17 @@ a {
 
 .sign-up-btn {
     display: block;
-    margin: 15px auto;
+    margin: 16px auto;
     width: 210px;
-    font-size: 20px;
     border-radius: 25px;
-    color:rgb(0, 0, 0);
     background-color: rgb(255, 255, 255);
     height: 45px;
-    font-weight: 600;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #181818;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
 }
 
 .sign-up-btn span {
@@ -95,12 +116,14 @@ a {
 
 .social-icons button {
     border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .social-icons button img {
     margin: 3px;
     width: 50px;
     height: 50px;
+    
 }
 
 .button-link {
@@ -108,13 +131,21 @@ a {
 }
 
 .error-message {
-    display: block;
-    margin: 0px auto;
-    border: 1px solid rgb(255, 0, 0, 0.5);
-    background-color: rgb(255, 0, 0, 0.1);
+    width: 288px;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FF7575;
+    background: #FFDCDC;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    font-size: 18px;
-    width: 280px;
+    text-align: center;
+}
+
+.error-message p {
+    padding: 0.8em 0;
 }
 
 .sign-up-body .error-message {

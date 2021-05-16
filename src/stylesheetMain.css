@@ -1,20 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800;900&family=Montserrat:wght@500;700&display=swap');
 
 body {
-    font-family: 'Roboto', sans-serif;
     background-color: rgb(240, 240, 240);
 }
 
 .name-project {
     text-align: center;
+    font-family: 'Montserrat Alternates', sans-serif;
     padding: 0;
     font-size: 24px;
+    font-weight: 900;
 }
 
 .container {
-    padding: 0 40px 0 40px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
+    max-width: 80%;
 }
 
 .prof-nav {
@@ -25,6 +28,12 @@ body {
     flex: 0 1 67.667%;  
 }
 
+.profile {
+    background-color: #F9F9F9;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
 .text {
     margin: 12px 0;
 }
@@ -33,7 +42,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border: 1px solid;
     background-color: rgb(24, 24, 24);
     border-radius: 10px;
     color: white;
@@ -73,17 +81,21 @@ body {
 
 .courses {
     margin: 0 0 0 15px;
-    border: 1px solid rgb(196, 185, 185);
-    border-radius: 10px 10px 0 0;
+    background: #F9F9F9;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
 }
 
 .availible-courses {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
     font-size: 18px;
-    font-weight: 600;
+    line-height: 22px;
     text-align: center;
-    background-color: rgb(24, 24, 24);
-    color: white;
-    padding: 10px 0;
+    background: #181818;
+    color: #FFFFFF;
+    padding: 15px 0;
     border-radius: 10px 10px 0 0;
 }
 
@@ -92,8 +104,14 @@ body {
     flex-direction: row;
 }
 
-.info-block h1 {
+.calendar-name, .today-name {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 39px;
     text-align: center;
+
+    color: #000000;
 }
 
 .today-schedule, .calendar {
@@ -102,21 +120,33 @@ body {
 }
 
 .menu {
-    border: 1px solid rgb(109, 105, 105);
+    background: #B9B9B9;
     border-radius: 20px;
+    height: 261px;
+    overflow-y: scroll;
+    margin: 0 15px 0 0;
 }
 
 .menu-block {
-    margin: 10px;
     display: flex;
     flex-direction: column;
+    border: 1px solid;
+    padding: 8px 5px 5px 5px;    
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: 9px 8px 9px 8px;
+}
+
+.menu-block p {
+    margin: 0 0 0 0;
 }
 
 .start-panel {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .play-video {
@@ -127,4 +157,262 @@ body {
     color: white;
     font-weight: 700;
     font-size: 18px;
+    text-align: center;
+}
+
+.play-video p {
+    margin-top: 0.2em;
+}
+
+.friends-teaсhers-block, .activity-progress {
+    display: flex;
+}
+
+.friends, .teachers, .last-activity, .progress {
+    flex: 0 1 50%;
+}
+
+.friends, .teachers, .last-activity, .progress {
+    font-family: 'Montserrat', sans-serif;
+    margin: 19px 11px 19px 14px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #000000;
+    box-shadow: 0px 2px 12px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.friends, .teachers {
+    padding: 6px;
+}
+
+.friends span, .teachers span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.friends p, .teachers p {
+    margin: 0px;
+}
+
+.lessons-blocks, .grey-block {
+    text-align: left;
+    background: #D3D3D3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: 0;
+    width: inherit;
+}
+
+.lesson-block::after {
+    content: '';
+    display: block;
+    margin: 0px 3px 5px 3px;
+    height: 2px;
+    background-color: #878787;
+}
+
+.profile-info {
+    display:flex;
+    flex-direction: column;
+}
+
+.all-activities-btn, .all-marks-btn {
+    font-family: 'Montserrat', sans-serif;
+    height: 30px;
+    margin: 26px auto 10px auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.last-activity {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 13px;
+    color: #000000;
+    height: 100%;
+}
+
+.lesson-block {
+    margin: 0 5px 0 5px;
+}
+
+.grey-block {
+    text-align: center;
+    font-size: 16px;
+    line-height: 17px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.green-circle {
+    margin: 10px auto;   
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+    background: #91DA57;
+    box-shadow: inset 0px 3px 10px rgba(0, 0, 0, 0.25);    
+    display: flex; align-items: center; justify-content: center;
+}
+
+.mark {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 29px;
+    margin: 15px 0;
+    color: #FFFFFF;
+}
+
+.edit-profile { 
+    min-width: 220px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: #181818;
+    margin: 0 auto 25px auto;
+}
+
+.lessons-blocks {
+    margin: 4px 0 0 0;
+}
+
+.navbar {
+    flex: 0 1 33.333%;
+    margin: 37px 0 0 0;
+    padding: 0 27.5px 0 27.5px; 
+    background: #F9F9F9;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    border: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar div {
+    flex: 0 1 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-btn, .video-btn, .chat-btn, .homework-btn {
+    padding: 6.5px; 
+    margin: 0 auto;
+
+    text-align: center;
+
+    color: #BCBCBC;
+}
+
+.navbar div p {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 11px;
+    margin: 0 0 6px 0;
+    color: #BCBCBC;
+}
+
+.time {
+    margin: 0 10px 0 0;
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    min-width: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.slick-list {
+    overflow: hidden;   
+    width: 60vw; 
+}
+
+.slider-item {
+    font-size: 0;
+    text-align: center; 
+    background: #FFFFFF;
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    margin: 20px 10px 20px 10px;
+    min-height: 180px;
+    max-width: 120px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(109, 109, 109);
+    border-radius: 8px;
+    border: 2px solid;
+    border-color: #B9B9B9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(83, 83, 83);
+}
+
+.slider .slick-arrow {
+    position: absolute;
+    top: 27%;
+    z-index: 10;
+
+}
+
+.slick-arrow.slick-prev { 
+    left: 0;
+}
+
+.slick-arrow.slick-next { 
+    right: 0;
 }
