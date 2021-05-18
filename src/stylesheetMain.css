@@ -402,17 +402,24 @@ body {
     background: rgb(83, 83, 83);
 }
 
-.slider .slick-arrow {
+.slide-prev {
     position: absolute;
-    top: 27%;
+    top: 22%;
     z-index: 10;
-
+    left: 31%;
+    border: 0;
+    background-color: transparent;
 }
 
-.slick-arrow.slick-prev { 
-    left: 0;
+.slide-next{ 
+    position: absolute;
+    top: 22%;
+    z-index: 10;
+    right: 12%;
+    border: 0;
+    background-color: transparent;
 }
 
-.slick-arrow.slick-next { 
-    right: 0;
+.slide-prev img, .slide-next img {
+    max-width: 120px;
 }
