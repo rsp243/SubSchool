@@ -33,3 +33,32 @@ function mouseleavelog() {
     $('.slider__body').find(".slide-next").fadeOut(1000)
     $('.slider__body').find(".slide-prev").fadeOut(1000)
 }
+
+$('.home-btn').on('click', function() {
+    $('.courses').css('display', '')
+    $('.video').css('display', 'none')
+    $('.chat').css('display', 'none')
+    $('.homework').css('display', 'none')
+});
+
+$('.video-btn').on('click', function() {
+    $('.video').css('display', '')
+    $('.courses').css('display', 'none')
+    $('.chat').css('display', 'none')
+    $('.homework').css('display', 'none')
+});
+
+$('.chat-btn').on('click', function() {
+    $('.chat').css('display', '')
+    $('.courses').css('display', 'none')
+    $('.video').css('display', 'none')
+    $('.homework').css('display', 'none')
+});
+
+$('.homework-btn').on('click', function() {
+    $('.homework').css('display', '')
+    $('.courses').css('display', 'none')
+    $('.chat').css('display', 'none')
+    $('.video').css('display', 'none')
+});
+
