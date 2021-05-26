@@ -10,13 +10,10 @@ $('.sign-in-btn').on('click', function() {
     let passwordValue = document.getElementById('password').value;
     if (loginValue === "" || passwordValue === "") {
         $('.sign-in .error-message').css('display', '');
-    } else {
-        $('.sign-in .error-message').css('display', 'none');
-        if (loginValue === "admin" && passwordValue === "admin"){
-            window.location.href = "main.html";
-        }
+    } else if (loginValue === "admin" && passwordValue === "admin"){
+        window.location.href = "main.html";
     }
-})
+})  
 
 $('.sign-up-btn').on('click', function() {
     let nameValue = document.getElementById('name').value;

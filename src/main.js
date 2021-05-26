@@ -62,3 +62,6 @@ $('.homework-btn').on('click', function() {
     $('.video').css('display', 'none')
 });
 
+$('.chat-item').on('click', function() {
+    alert('Го боротся')
+})
