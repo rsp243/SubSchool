@@ -455,3 +455,60 @@ body {
     color: rgb(240, 240, 240);
     margin: auto 10px;
 }
+
+.window-message {
+    box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.25);
+}
+
+.header-block {
+    background-color: rgb(83, 83, 83);
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.header-block h3 {
+    color: rgb(240, 240, 240);
+}
+
+.back-btn {
+    margin: 0 5px 0 10px;
+    flex: 0 0 5%;
+    border-radius: 50%;
+    width: 30px;
+    height: 40px;
+}
+
+.voice-message img {
+    width: 50px;
+    height: 50px;
+}
+
+.send-message {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.send-message-text {
+    font-size: 20px;
+}
+
+.main-block {
+    position: relative;
+}
+
+/*87%*/
+
+
+.message-you {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.message-you p {
+    margin-right: 10px;
+}
+
+.message-person p {
+    margin-left: 10px;
+}

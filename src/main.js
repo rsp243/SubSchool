@@ -63,5 +63,21 @@ $('.homework-btn').on('click', function() {
 });
 
 $('.chat-item').on('click', function() {
-    alert('Го боротся')
+    $('.window-message').css('display', '')
+    let wid = $('.chat').width() * 0.9
+    let input_text_wid = $('.chat').width() * 0.8
+    $('.window-message').css('width', wid)
+    $('.send-message-text').css('width', input_text_wid)
+    $('.chat-item').css('display', 'none')
+    $('.window-message h3').text('Чат с пользователем ' + $(this).text())
+    let height_message_bar = ($('.chat').height() - ($('.header-block').height() + $('.chat-topic').height())) * 0.73 - $('.messages').height()
+    $('.main-block').css('bottom', height_message_bar * -1)
+    let height_window_message = $('.window-message').height()
+    $('.window-message').css('height', height_window_message + height_message_bar)
+})
+
+$('.back-btn').on('click', function() {
+    $('.window-message').css('display', 'none')
+    $('.chat-item').css('display', '')
+    $('.window-message').css('height', 256.438)
 })
