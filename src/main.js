@@ -53,6 +53,9 @@ $('.chat-btn').on('click', function() {
     $('.courses').css('display', 'none')
     $('.video').css('display', 'none')
     $('.homework').css('display', 'none')
+    $('.window-message').css('display', 'none')
+    $('.chat-item').css('display', '')
+    $('.window-message').css('height', 256.438)
 });
 
 $('.homework-btn').on('click', function() {
@@ -80,4 +83,17 @@ $('.back-btn').on('click', function() {
     $('.window-message').css('display', 'none')
     $('.chat-item').css('display', '')
     $('.window-message').css('height', 256.438)
+})
+
+$('.video-item').on('click', function() {
+    $('.window-video').css('display', '')
+    $('.video-item').css('display', 'none')
+    let wid = $('.video').width() * 0.9
+    $('.window-video').css('width', wid)
+    $('.plyr__video-embed').css('width', wid)
+})
+
+$('.back-btn-video').on('click', function() { 
+    $('.window-video').css('display', 'none')
+    $('.video-item').css('display', '')
 })

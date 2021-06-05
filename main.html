@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная страница</title>
     <link rel="stylesheet" href="src/stylesheetMain.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css">
 </head>
 <body>
     <div class="name-project">
@@ -144,6 +145,30 @@
         </div>
         <div class="video" style="display: none;">
             <div class="video-topic">Видео</div>
+            <div class="video-list">
+                <div class="video-item">
+                    <div class="name-of-lesson"><p>Урок: Физика. Тема: Первый закон Ньютона</p><img src="img/play-video.png" alt=""></div>
+                </div>
+                <div class="video-item">
+                    <div class="name-of-lesson"><p>Урок: Геометрия. Тема: Равнобедренные треугольники</p><img src="img/play-video.png" alt=""></div>
+                </div>
+                <div class="window-video" style="display: none;">
+                    <div class="header-block">
+                        <button class="back-btn-video"><</button>
+                        <h3>Видеоурок:</h3>
+                    </div>
+                    <div class="main-block-video">
+                        <div class="plyr__video-embed" id="player">
+                            <iframe
+                              src="http://185.151.242.236/%D0%9F%D1%80%D0%BE%D0%B1%D0%BD%D1%8B%D0%B9*!%D0%BA%D1%83%D1%80%D1%81@en@0@0@2@0@0@0/%D0%A4%D0%B8%D0%B7%D0%BA%D0%B01!@*160!@*161/stream/stream.m3u8"
+                              allowfullscreen
+                              allowtransparency
+                              allow="autoplay"
+                            ></iframe>
+                          </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="chat" style="display: none;">
             <div class="chat-topic">Чаты</div>
@@ -189,5 +214,7 @@
     <script src="src/jquery-3.5.1.min.js"></script>
     <script src="src/slick.min.js"></script>
     <script src="src/main.js"></script>
+    <script type="module" src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+
 </body>
 </html>

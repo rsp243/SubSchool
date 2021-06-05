@@ -447,7 +447,6 @@ body {
 
 .name-of-pers {
     display: flex;
-
 }
 
 .name-of-pers p {
@@ -471,7 +470,7 @@ body {
     color: rgb(240, 240, 240);
 }
 
-.back-btn {
+.back-btn, .back-btn-video {
     margin: 0 5px 0 10px;
     flex: 0 0 5%;
     border-radius: 50%;
@@ -493,7 +492,7 @@ body {
     font-size: 20px;
 }
 
-.main-block {
+.main-block, .main-block-video {
     position: relative;
 }
 
@@ -511,4 +510,38 @@ body {
 
 .message-person p {
     margin-left: 10px;
+}
+
+.video-item {
+    min-height: 100px;
+    width: 94%;
+    border: 1px solid rgb(109, 109, 109, 0.5);
+    background-color: rgb(109, 105, 105);
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name-of-lesson p {
+    font-size: large;
+    color: rgb(240, 240, 240);
+    margin: auto 10px;
+}
+
+.video-item img {
+    width: 70px;
+    height: 70px;
+}
+
+.name-of-lesson {
+    display: flex;
+    justify-content: center;
 }
