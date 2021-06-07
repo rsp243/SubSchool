@@ -1,4 +1,11 @@
 $(document).ready(function () {
+    let min_height = $('.profile .header').height()
+    $('.availible-courses').css('height', min_height)
+    $('.video-topic').css('height', min_height)
+    $('.chat-topic').css('height', min_height)
+    $('.homework-topic').css('height', min_height)
+
+
     $('.slider__body').on('init', function (event, slick){
         $(this).find(".slide-next").last().trigger("click");
         setTimeout(function() {
